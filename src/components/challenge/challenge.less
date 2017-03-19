@@ -1,0 +1,38 @@
+.challenge-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  padding: 20px;
+}
+
+.word {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 35px;
+}
+
+.char {
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid;
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &.space {
+    border-bottom-color: #DDD;
+  }
+}
+
+@media (max-width: 600px) {
+  .char {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+}

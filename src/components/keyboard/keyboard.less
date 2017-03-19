@@ -1,0 +1,34 @@
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  justify-content: center;
+
+  .key {
+    height: 30px;
+    width: 40px;
+    border: 1px solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+
+    &.space {
+      width: 90px;
+    }
+
+    &.done {
+      color: white;
+      background: #AAA;
+    }
+
+    &.wrong {
+      background: red;
+      color: white;
+    }
+  }
+}
